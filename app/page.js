@@ -1,8 +1,8 @@
-// src/app/page.js
 'use client';
 
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -48,9 +48,11 @@ export default function Home() {
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl opacity-20 blur-lg"></div>
             <div className="relative bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+              <Image 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                 alt="Modern website design"
+                width={1470}
+                height={980}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -132,7 +134,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg text-blue-100 max-w-2xl mx-auto"
           >
-            Join thousands of satisfied customers who've elevated their brand with our platform.
+            Join thousands of satisfied customers who&apos;ve elevated their brand with our platform.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}

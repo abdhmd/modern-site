@@ -1,6 +1,7 @@
 // src/app/about/page.js
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiUsers, FiAward, FiGlobe } from 'react-icons/fi';
 
@@ -24,7 +25,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto"
           >
-            We're a team of passionate designers, developers, and strategists dedicated to creating exceptional digital experiences.
+            We&apos;re a team of passionate designers, developers, and strategists dedicated to creating exceptional digital experiences.
           </motion.p>
         </div>
 
@@ -36,9 +37,11 @@ export default function About() {
         >
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl opacity-20 blur-lg"></div>
           <div className="relative bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
               alt="Our team"
+              width={1470}
+              height={384}
               className="w-full h-96 object-cover"
             />
           </div>
@@ -59,7 +62,7 @@ export default function About() {
               Founded in 2020, we started as a small team with a big vision - to make web development accessible, beautiful, and powerful for everyone.
             </p>
             <p className="mt-4 text-gray-600">
-              What began as a passion project has grown into a full-service digital agency serving clients worldwide. We've stayed true to our core values while expanding our capabilities.
+              What began as a passion project has grown into a full-service digital agency serving clients worldwide. We&apos;ve stayed true to our core values while expanding our capabilities.
             </p>
           </motion.div>
 

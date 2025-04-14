@@ -1,4 +1,3 @@
-// src/app/contact/page.js
 'use client';
 
 import { motion } from 'framer-motion';
@@ -47,6 +46,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
+                  aria-label="Your name"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   placeholder="Your name"
                 />
@@ -56,6 +56,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
+                  aria-label="Your email"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   placeholder="your@email.com"
                 />
@@ -65,6 +66,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="subject"
+                  aria-label="Subject of your message"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   placeholder="How can we help?"
                 />
@@ -74,6 +76,7 @@ export default function Contact() {
                 <textarea
                   id="message"
                   rows="4"
+                  aria-label="Your message"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   placeholder="Your message here..."
                 ></textarea>
