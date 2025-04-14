@@ -1,11 +1,12 @@
 // src/app/layout.js
-import "./globals.css";
-import Navbar from "./_components/navbar";
-import Footer from "./_components/footer";
+import './globals.css';
+import Navbar from './_components/navbar';
+import Footer from './_components/footer';
+import BackToTop from './_components/back-to-top';
 
 export const metadata = {
-  title: "MODERN SITE",
-  description: "Built with Next.js App Router",
+  title: 'Modern Next.js Website',
+  description: 'Built with Next.js App Router',
 };
 
 export default function RootLayout({ children }) {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           </div>
         </main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
