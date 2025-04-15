@@ -1,9 +1,9 @@
 // src/app/about/page.js
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { FiUsers, FiAward, FiGlobe } from 'react-icons/fi';
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { FiUsers, FiAward, FiGlobe, FiStar } from "react-icons/fi";
 
 export default function About() {
   return (
@@ -17,7 +17,10 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900"
           >
-            About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Our Company</span>
+            About{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Our Company
+            </span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -25,7 +28,8 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto"
           >
-            We&apos;re a team of passionate designers, developers, and strategists dedicated to creating exceptional digital experiences.
+            We&apos;re a team of passionate designers, developers, and
+            strategists dedicated to creating exceptional digital experiences.
           </motion.p>
         </div>
 
@@ -37,8 +41,8 @@ export default function About() {
         >
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl opacity-20 blur-lg"></div>
           <div className="relative bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100">
-            <Image 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+            <Image
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
               alt="Our team"
               width={1470}
               height={384}
@@ -57,12 +61,18 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Story</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Our Story
+            </h2>
             <p className="mt-6 text-gray-600">
-              Founded in 2020, we started as a small team with a big vision - to make web development accessible, beautiful, and powerful for everyone.
+              Founded in 2020, we started as a small team with a big vision - to
+              make web development accessible, beautiful, and powerful for
+              everyone.
             </p>
             <p className="mt-4 text-gray-600">
-              What began as a passion project has grown into a full-service digital agency serving clients worldwide. We&apos;ve stayed true to our core values while expanding our capabilities.
+              What began as a passion project has grown into a full-service
+              digital agency serving clients worldwide. We&apos;ve stayed true
+              to our core values while expanding our capabilities.
             </p>
           </motion.div>
 
@@ -74,14 +84,35 @@ export default function About() {
             className="grid grid-cols-2 gap-6"
           >
             {[
-              { icon: <FiUsers size={32} />, value: "50+", label: "Team Members" },
-              { icon: <FiAward size={32} />, value: "200+", label: "Projects Completed" },
-              { icon: <FiGlobe size={32} />, value: "15+", label: "Countries Served" },
-              { value: "100%", label: "Client Satisfaction" }
+              {
+                icon: <FiUsers size={32} />,
+                value: "50+",
+                label: "Team Members",
+              },
+              {
+                icon: <FiAward size={32} />,
+                value: "200+",
+                label: "Projects Completed",
+              },
+              {
+                icon: <FiGlobe size={32} />,
+                value: "15+",
+                label: "Countries Served",
+              },
+              {
+                icon: <FiStar size={32} />,
+                value: "100%",
+                label: "Client Satisfaction",
+              },
             ].map((stat, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+              <div
+                key={index}
+                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+              >
                 <div className="text-blue-600 mb-2">{stat.icon}</div>
-                <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
+                <div className="text-3xl font-bold text-gray-900">
+                  {stat.value}
+                </div>
                 <div className="text-gray-600 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -106,19 +137,22 @@ export default function About() {
           {[
             {
               title: "Innovation",
-              description: "We push boundaries and explore new possibilities in every project.",
-              color: "from-blue-500 to-blue-600"
+              description:
+                "We push boundaries and explore new possibilities in every project.",
+              color: "from-blue-500 to-blue-600",
             },
             {
               title: "Excellence",
-              description: "Quality is never compromised in our work and relationships.",
-              color: "from-purple-500 to-purple-600"
+              description:
+                "Quality is never compromised in our work and relationships.",
+              color: "from-purple-500 to-purple-600",
             },
             {
               title: "Collaboration",
-              description: "Great things happen when we work together with our clients.",
-              color: "from-indigo-500 to-indigo-600"
-            }
+              description:
+                "Great things happen when we work together with our clients.",
+              color: "from-indigo-500 to-indigo-600",
+            },
           ].map((value, index) => (
             <motion.div
               key={index}
@@ -129,7 +163,9 @@ export default function About() {
               className={`bg-gradient-to-r ${value.color} p-0.5 rounded-xl`}
             >
               <div className="bg-white rounded-lg p-8 h-full">
-                <h3 className="text-xl font-semibold text-gray-900">{value.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {value.title}
+                </h3>
                 <p className="mt-2 text-gray-600">{value.description}</p>
               </div>
             </motion.div>

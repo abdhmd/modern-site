@@ -67,7 +67,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="flex flex-col items-center md:items-start"
+            className="flex flex-col  items-start"
           >
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
               Navigation

@@ -177,7 +177,7 @@ export default function Contact() {
           className="relative rounded-xl overflow-hidden shadow-lg h-96"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-20"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center m-4 text-center">
             <p className="text-lg font-medium text-gray-700 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
               Interactive Map Would Display Here
             </p>
